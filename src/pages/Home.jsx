@@ -1,0 +1,21 @@
+import Hero from '../components/sections/Hero';
+import About from '../components/sections/About';
+import Skills from '../components/sections/Skills';
+import Experience from '../components/sections/Experience';
+import Projects from '../components/sections/Projects';
+import CTA from '../components/sections/CTA';
+
+const Home = () => {
+  return (
+    <div>
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <CTA />
+    </div>
+  );
+};
+
+export default Home;

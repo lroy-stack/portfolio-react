@@ -1,0 +1,26 @@
+[
+  {
+    "id": "github",
+    "name": "GitHub",
+    "icon": "github",
+    "url": "https://github.com/lroy-stack"
+  },
+  {
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "icon": "linkedin",
+    "url": "https://linkedin.com/in/lroy"
+  },
+  {
+    "id": "twitter",
+    "name": "Twitter",
+    "icon": "twitter",
+    "url": "https://twitter.com/lroy"
+  },
+  {
+    "id": "email",
+    "name": "Email",
+    "icon": "envelope",
+    "url": "mailto:contacto@lr0y.dev"
+  }
+]

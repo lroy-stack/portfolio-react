@@ -1,0 +1,16 @@
+{
+  "api": {
+    "baseUrl": "https://api.example.com",
+    "timeout": 10000
+  },
+  "features": {
+    "github": true,
+    "analytics": true,
+    "email": true
+  },
+  "social": {
+    "github": "https://github.com/lroy-stack",
+    "linkedin": "https://linkedin.com/in/lroy",
+    "twitter": "https://twitter.com/lroy"
+  }
+}

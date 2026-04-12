@@ -1,0 +1,37 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Portfolio Website",
+      "description": "Modern portfolio built with React, Vite, and Tailwind CSS",
+      "image": "https://via.placeholder.com/400x300",
+      "tags": ["React", "Vite", "Tailwind"],
+      "links": {
+        "github": "https://github.com/lroy-stack/portfolio-react",
+        "live": "https://apuntao.com"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "skills": ["React", "JavaScript", "TypeScript", "Tailwind CSS", "HTML/CSS"]
+    },
+    {
+      "category": "Backend",
+      "skills": ["Node.js", "Express", "PostgreSQL", "MongoDB"]
+    },
+    {
+      "category": "Tools",
+      "skills": ["Git", "Docker", "AWS", "Vercel", "GitHub"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Tech Company",
+      "position": "Senior Developer",
+      "period": "2022 - Present",
+      "description": "Leading development of innovative web applications"
+    }
+  ]
+}
