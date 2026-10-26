@@ -1,91 +1,59 @@
-# Portfolio React - Leroy Löwe
+# portfolio-react — a React portfolio starter
 
-Modern, responsive portfolio website built with React 18, Vite, and Tailwind CSS.
+No live demo. The personal site at lr0y.dev is a different, later project; this repository is the first React
+version, written in April 2026, and is kept as a starter template.
 
-## 🚀 Quick Start
+## What it is
+
+A single-page portfolio built with React, Vite and Tailwind CSS. Content is read from `src/data/portfolio.json`,
+which currently holds placeholder projects, skills and experience that you replace with your own.
+
+## What it does
+
+- Sections for hero, projects, skills, experience, contact and a call to action, plus pages for About, Portfolio,
+  project detail and not found, routed with React Router.
+- Dark and light theme toggle (`ThemeContext`).
+- Service modules for a GitHub profile lookup, a contact form through formsubmit.co, analytics and a generic API
+  client in `src/services/`. These are stubs with placeholder addresses.
+
+## Known issues
+
+The service modules read `process.env.REACT_APP_*`, which Vite does not define. Switch them to
+`import.meta.env.VITE_*` before using the GitHub, email or API features.
+
+## Built with
+
+React 18, Vite 5, Tailwind CSS 3, React Router 6, Axios, ESLint and Prettier. Deploys to Vercel (`vercel.json`).
+
+## Run it locally
+
+Requires Node 18 or later.
 
 ```bash
-# Install dependencies
 npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
+npm run dev        # development server
+npm run build      # production build into dist/
+npm run preview    # serve the build
+npm run lint
+npm run format
 ```
 
-## ✨ Features
-
-- ⚡ **Fast** - Built with Vite for instant HMR
-- 🎨 **Responsive** - Mobile-first design
-- 🌓 **Dark Mode** - Theme toggle
-- 🎯 **Optimized** - Code splitting & lazy loading
-- 📱 **Modern** - React 18 with Hooks
-
-## 📁 Project Structure
+## Layout
 
 ```
-src/
-├── components/     # Reusable React components
-├── pages/         # Page components
-├── hooks/         # Custom React hooks
-├── services/      # API services
-├── data/          # JSON data files
-├── styles/        # CSS stylesheets
-├── utils/         # Utility functions
-└── App.jsx        # Root component
+src/components/   common pieces, page sections, ui
+src/pages/        route pages
+src/context/      theme context
+src/hooks/        custom hooks
+src/services/     api, github, email, analytics
+src/data/         portfolio.json content
+src/styles/       stylesheets
 ```
 
-## 🛠️ Available Scripts
+MIT licence.
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Check code quality
-- `npm run format` - Format code with Prettier
+---
 
-## 📦 Tech Stack
-
-- React 18
-- Vite
-- Tailwind CSS
-- React Router v6
-- Axios
-
-## 🌐 Deployment
-
-Deploy to Vercel with one click:
-
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/lroy-stack/portfolio-react)
-
-## 📝 Configuration
-
-Edit `.env.example` and rename to `.env.local`:
-
-```env
-REACT_APP_API_URL=your_api_url
-REACT_APP_GITHUB_USER=your_github_username
-REACT_APP_EMAIL_SERVICE=formsubmit
-```
-
-## 📚 Documentation
-
-See [SETUP.md](./SETUP.md) for detailed setup instructions.
-See [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md) for complete project overview.
-
-## 🎯 Customization
-
-Edit `src/data/portfolio.json` to customize:
-- Projects
-- Skills
-- Experience
-- Contact information
-
-## 📄 License
-
-MIT License - Feel free to use this template
-
-## 👤 Author
-
-Leroy Löwe - [GitHub](https://github.com/lroy-stack) | [Web](https://apuntao.com)
+Versión en español: plantilla de portfolio personal en React + Vite + Tailwind (abril 2026) con tema oscuro y claro.
+El contenido es de ejemplo y los servicios usan `process.env.REACT_APP_*`, que Vite no define: hay que migrarlos a
+`import.meta.env.VITE_*`.
